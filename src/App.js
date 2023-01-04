@@ -1,9 +1,13 @@
 /** @format */
 
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <div className='App'>
-      <h3>Hello world</h3>
+      <Navbar />
+      <Footer />
     </div>
   );
 }
