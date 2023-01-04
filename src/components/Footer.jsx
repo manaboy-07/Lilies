@@ -3,7 +3,11 @@
 import React from "react";
 import PlayStore from "../Images/PlayStore.svg";
 import AppStore from "../Images/AppStore.svg";
-import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
+import {
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+  AiFillYoutube,
+} from "react-icons/ai";
 
 function Footer() {
   const date = new Date();
@@ -63,18 +67,18 @@ function Footer() {
         </ul>
       </div>
       <hr className='text-neutral' />
-      <div className='icons-section'>
-        <ul>
+      <div className='icons-section my-3'>
+        <ul className='flex flex-col md:flex-row justify-evenly'>
           <li> &copy; {year} LILIES ,All rights reserved</li>
-          <section>
-            <li className='rounded-full bg-base-100'>
-              <AiOutlineInstagram className='text-neutral' />
+          <section className='flex '>
+            <li className='rounded-full h-10 w-10  bg-base-100 mx-2 flex justify-center'>
+              <AiOutlineInstagram className='text-neutral text-2xl mt-2' />
             </li>
-            <li className='rounded-full bg-base-100'>
-              <AiOutlineTwitter className='text-neutral' />
+            <li className='rounded-full h-10 w-10  bg-base-100 mx-2 flex justify-center'>
+              <AiOutlineTwitter className='text-neutral text-2xl mt-2' />
             </li>
-            <li className='rounded-full bg-base-100'>
-              <AiFillYoutube className='text-neutral' />
+            <li className='rounded-full h-10 w-10  bg-base-100 mx-2 flex justify-center'>
+              <AiFillYoutube className='text-neutral text-2xl mt-2' />
             </li>
           </section>
         </ul>

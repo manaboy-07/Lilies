@@ -1,13 +1,10 @@
 /** @format */
-
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <div className='App'>
-      <Navbar />
-      <Footer />
+      <HomePage />
     </div>
   );
 }
