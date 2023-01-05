@@ -13,5 +13,11 @@
   height: 120%;
 }
 .input-container input {
-  width: 160%;
+  width: 150%;
+}
+#input-show {
+  width: 150%;
+}
+.form-btn {
+  width: 150%;
 }
