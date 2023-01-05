@@ -41,6 +41,7 @@
 .dash-content {
   width: 75%;
   position: fixed;
+  overflow-y: scroll;
   right: 0;
   height: 100vh;
 }

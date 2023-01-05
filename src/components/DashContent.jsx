@@ -3,6 +3,7 @@
 import React from "react";
 import Soup from "../Images/soup.png";
 import DashProps from "./DashProps";
+import MeatBalls from "../Images/meatballs.png";
 import Spag from "../Images/HeroImage.png";
 import Burger from "../Images/burgers.png";
 import Stir from "../Images/Stir.png";
@@ -21,7 +22,12 @@ function DashContent() {
         </section>
       </div>
 
-      <section>
+      <section className='place-items-center grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 '>
+        <DashProps name='Burger Meal' src={Burger} des='Something sweet' />
+        <DashProps name='Soup' src={Soup} des='Something sweet' />
+        <DashProps name='Pasta' src={Stir} des='Something sweet' />
+        <DashProps name='Ramen' src={Spag} des='Something sweet' />
+        <DashProps name='Meat Balls' src={MeatBalls} des='Something sweet' />
         <DashProps name='Burger Meal' src={Burger} des='Something sweet' />
       </section>
     </div>
