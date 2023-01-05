@@ -21,3 +21,26 @@
 .form-btn {
   width: 150%;
 }
+.btn-menu {
+  width: 30px;
+  height: 30px;
+}
+.menu-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-bar {
+  position: fixed;
+  z-index: 99;
+  width: 25%;
+  background-color: #fbfbfb;
+  border-top-right-radius: 15px;
+  height: 100vh;
+}
+.dash-content {
+  width: 75%;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+}

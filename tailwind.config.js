@@ -19,11 +19,11 @@ module.exports = {
 
           "base-100": "#2A303C",
 
-          info: "#3ABFF8",
+          info: "#06E775",
 
           success: "#3A8F4D",
 
-          warning: "#FBBD23",
+          warning: "#F3C294",
 
           error: "#C92C33",
         },
