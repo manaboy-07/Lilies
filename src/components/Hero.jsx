@@ -30,7 +30,7 @@ function Hero() {
       </div>
 
       <section className='flex text-center flex-col justify-center'>
-        <h2 className='text-3xl text-bold'>Special Meals of the day!</h2>
+        <h2 className='text-3xl font-bold'>Special Meals of the day!</h2>
         <h5 className='my-2'>
           Check our sepecials of the day and get discounts on all our meals{" "}
           <br /> and swift delivery to what ever location within Ilorin.
@@ -57,7 +57,7 @@ function Hero() {
 
       <section className='notify flex justify-evenly my-8 flex-col md:flex-row'>
         <div>
-          <h2 className='text-3xl text-secondary text-bold my-2'>
+          <h2 className='text-3xl text-secondary font-bold my-2'>
             Get notified when we update!
           </h2>
           <h4>

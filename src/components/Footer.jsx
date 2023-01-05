@@ -16,7 +16,7 @@ function Footer() {
     <section className='bg-accent py-4'>
       <div className='list-sections place-items-center grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 '>
         <ul className='text-neutral'>
-          <li className='list-header text-bold text-2xl ml-2'>Company</li>
+          <li className='list-header font-bold text-2xl ml-2'>Company</li>
           <li className='my-1 px-2 hover:bg-base-100 rounded-md py-2 cursor-pointer'>
             About us
           </li>
@@ -29,7 +29,7 @@ function Footer() {
         </ul>
 
         <ul className='text-neutral'>
-          <li className='list-header text-bold text-2xl ml-2'>Support</li>
+          <li className='list-header font-bold text-2xl ml-2'>Support</li>
           <li className='my-1 px-2 hover:bg-base-100 rounded-md py-2 cursor-pointer'>
             Help Center
           </li>
@@ -39,7 +39,7 @@ function Footer() {
         </ul>
 
         <ul className='text-neutral'>
-          <li className='list-header text-bold text-2xl ml-2'>Legal</li>
+          <li className='list-header font-bold text-2xl ml-2'>Legal</li>
           <li className='my-1 px-2 hover:bg-base-100 rounded-md py-2 cursor-pointer'>
             Cookies Policy
           </li>
@@ -55,7 +55,7 @@ function Footer() {
         </ul>
 
         <ul className='text-neutral'>
-          <li className='list-header text-bold text-2xl my-2'>Install App</li>
+          <li className='list-header font-bold text-2xl my-2'>Install App</li>
           <div className='flex flex-col'>
             <li className='my-1'>
               <img src={PlayStore} alt='' />

@@ -8,3 +8,10 @@
   margin: 0;
   padding: 0;
 }
+.signImg {
+  width: 70%;
+  height: 120%;
+}
+.input-container input {
+  width: 160%;
+}
