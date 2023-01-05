@@ -7,14 +7,23 @@ function CheckOut() {
     e.preventDefault();
   };
   return (
-    <div className='checkout flex flex-col p-4 dash-output'>
-      <h1 className='text-2xl text-bold text-primary'>CheckOut</h1>
+    <div className='checkout  p-4 dash-output'>
+      <h1 className='text-2xl text-bold text-primary'>Checkout</h1>
+
       <form action='' onSubmit={handleSubmit}>
-        <input type='text' className='p-4' placeholder='Card Number' />
-        <input type='text' className='p-4' placeholder='Exp Date' />
-        <input type='text' className='p-4' placeholder='CCV/CCV2' />
-        <input type='text' className='p-4' placeholder='Card Pin' />
-        <button className=' p-2 bg-primary text-secondary hover:bg-primary'>
+        <div>
+          <input type='text' className='p-4 my-2' placeholder='Card Number' />
+        </div>
+        <div>
+          <input type='text' className='p-4 my-2' placeholder='Exp Date' />
+        </div>
+        <div>
+          <input type='text' className='p-4 my-2' placeholder='CCV/CCV2' />
+        </div>
+        <div>
+          <input type='text' className='p-4 my-2' placeholder='Card Pin' />
+        </div>
+        <button className=' p-2 bg-primary text-secondary text-bold w-full hover:bg-primary'>
           Make Payment
         </button>
       </form>

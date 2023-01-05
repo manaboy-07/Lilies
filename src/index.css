@@ -45,3 +45,15 @@
   right: 0;
   height: 100vh;
 }
+.checkout {
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-output {
+  position: fixed;
+  right: 0px;
+  width: 38%;
+  background-color: #fff;
+  height: 100vh;
+}
