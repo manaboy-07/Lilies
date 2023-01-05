@@ -12,7 +12,7 @@ function DashContent() {
     <div className='bg-white dash-content'>
       <div className='p-4'>
         <section className='menu-div'>
-          <div>
+          <div className='text-black'>
             <h1 className='text-2xl'>Good Morning, Mr Manasseh</h1>
             <h3>What delicious meal are we having today?</h3>
           </div>
