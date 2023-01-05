@@ -8,6 +8,7 @@ import SignUp from "./Pages/SignUp";
 function App() {
   return (
     <div className='App bg-white'>
+      <SideMenu />
       <CheckOut />
     </div>
   );
