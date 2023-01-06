@@ -1,5 +1,6 @@
 /** @format */
 import CheckOut from "./components/CheckOut";
+import OrderList from "./components/OrderList";
 import SideMenu from "./components/SideMenu";
 import HomePage from "./Pages/HomePage";
 import Login from "./Pages/Login";
@@ -9,7 +10,8 @@ function App() {
   return (
     <div className='App bg-white'>
       <SideMenu />
-      <CheckOut />
+      <OrderList />
+      {/* <CheckOut /> */}
     </div>
   );
 }
