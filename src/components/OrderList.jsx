@@ -39,21 +39,21 @@ function OrderList() {
           <h2 className='font-bold text-primary mx-2'>10 pcs Avail</h2>
         </div>
       </section>
-      <section>
+      <section className='mt-6'>
         <div>
           <button
             onClick={decrementCount}
             className='text-xl font-bold p-3 text-primary btn rounded-none bg-secondary hover:bg-secondary'>
             -
           </button>
-          <h2 className='text-2xl text-primary font-extrabold'>0</h2>
+          <h2 className='text-2xl mx-4 text-primary font-extrabold'>0</h2>
           <button
             onClick={incrementCount}
             className='text-xl font-bold p-3 text-primary btn rounded-none bg-secondary hover:bg-secondary'>
             +
           </button>
         </div>
-        <div>
+        <div className='mx-3'>
           <button className='text-white font-bold cursor-pointer p-3 bg-primary outline-none'>
             Add To Cart
           </button>
