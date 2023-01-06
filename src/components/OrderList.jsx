@@ -39,24 +39,26 @@ function OrderList() {
         <h2>{/* some description */}</h2>
       </section>
       <section>
-        <div className='flex flex-row'>
+        <div className='flex flex-row justify-between'>
           <h2 className='font-bold text-primary mx-2'>NGN {sold} </h2>
           <h2 className='font-bold text-primary mx-2'>10-20 mins</h2>
 
           <h2 className='font-bold text-primary mx-2'>10 pcs Avail</h2>
         </div>
       </section>
-      <section className='mt-6'>
-        <div>
+      <section className='mt-6 flex flex-row justify-between'>
+        <div className='flex '>
           <button
             onClick={decrementCount}
-            className='text-xl font-bold p-3 text-primary btn rounded-none bg-secondary hover:bg-secondary'>
+            className='text-xl font-extrabold p-2 text-primary btn rounded-none bg-secondary hover:bg-secondary'>
             -
           </button>
-          <h2 className='text-2xl mx-4 text-primary font-extrabold'>{count}</h2>
+          <h2 className='text-2xl mx-4 mt-2 text-primary font-extrabold'>
+            {count}
+          </h2>
           <button
             onClick={incrementCount}
-            className='text-xl mb-2 font-bold p-3 text-primary btn rounded-none bg-secondary hover:bg-secondary'>
+            className='text-xl flex justify-center items-center font-extrabold p-2 text-primary btn rounded-none bg-secondary hover:bg-secondary'>
             +
           </button>
         </div>
