@@ -16,16 +16,16 @@ function SideMenu() {
           </div>
           {/* List items */}
           <ul className='side-list py-8 text-black'>
-            <li className='flex my-6 px-2 rounded-md cursor-pointer py-2 hover:bg-slate-300'>
+            <li className='flex my-6 px-2 rounded-md cursor-pointer py-2 hover:bg-slate-200'>
               <div>🎪</div>
               <h3 className='mx-3'>Dashboard</h3>
             </li>
-            <li className='flex my-6 px-2 rounded-md cursor-pointer py-2 hover:bg-slate-300'>
+            <li className='flex my-6 px-2 rounded-md cursor-pointer py-2 hover:bg-slate-200'>
               <div>🎪</div>
               <h3 className='mx-3'>Your Profile</h3>
             </li>
 
-            <li className='flex my-6 px-2 rounded-md cursor-pointer py-2 hover:bg-slate-300'>
+            <li className='flex my-6 px-2 rounded-md cursor-pointer py-2 hover:bg-slate-200'>
               <div className='flex'>
                 <div>🎪</div>
                 <h3 className='mx-3'>Orders</h3>
@@ -34,7 +34,7 @@ function SideMenu() {
                 6
               </button>
             </li>
-            <li className='flex my-6 px-2 rounded-md cursor-pointer py-2 hover:bg-slate-300'>
+            <li className='flex my-6 px-2 rounded-md cursor-pointer py-2 hover:bg-slate-200'>
               <div className='flex'>
                 <div>🎪</div>
                 <h3 className='mx-3'>Your Cart</h3>
