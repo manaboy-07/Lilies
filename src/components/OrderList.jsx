@@ -3,13 +3,16 @@
 import React, { useState } from "react";
 
 function OrderList() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
+  const [price, setPrice] = useState(1000);
   const incrementCount = () => {
     setCount((prevState) => prevState + 1);
+    getPrice();
     guardClause();
   };
   const decrementCount = () => {
     setCount((prevState) => prevState - 1);
+    getPrice();
     guardClause();
   };
   const guardClause = () => {
@@ -19,6 +22,9 @@ function OrderList() {
     }
   };
 
+  const getPrice = () => {
+    setPrice((prevState) => prevState * count);
+  };
   return (
     <div className=' p-6 dash-output'>
       <section>
@@ -27,7 +33,7 @@ function OrderList() {
       </section>
       <section>
         <div className='flex flex-row'>
-          <h2 className='font-bold text-primary mx-2'>NGN 2000</h2>
+          <h2 className='font-bold text-primary mx-2'>NGN {price} </h2>
           <h2 className='font-bold text-primary mx-2'>10-20 mins</h2>
 
           <h2 className='font-bold text-primary mx-2'>10 pcs Avail</h2>
