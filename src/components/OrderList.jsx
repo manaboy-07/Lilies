@@ -63,7 +63,7 @@ function OrderList() {
           </button>
         </div>
         <div className='mx-3'>
-          <button className='text-white font-bold cursor-pointer p-3 bg-primary outline-none'>
+          <button className='text-white btn rounded-none font-bold cursor-pointer p-3 bg-primary outline-none hover:bg-primary'>
             Add To Cart
           </button>
         </div>
