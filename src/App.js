@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='App bg-white'>
       <SideMenu />
-      <OrderList />
+      
       {/* <CheckOut /> */}
     </div>
   );

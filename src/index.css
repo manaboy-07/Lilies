@@ -55,6 +55,11 @@
   right: 0px;
   width: 38%;
   z-index: 999;
-  background-color: #fff;
+  background-color: rgb(248, 245, 245);
   height: 100vh;
+}
+.order-img {
+  width: 70%;
+  object-fit: contain;
+  height: 60%;
 }

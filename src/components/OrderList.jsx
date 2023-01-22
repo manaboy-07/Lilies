@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-function OrderList() {
+function OrderList({ image, des }) {
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(1000);
   const [sold, setSold] = useState(null);
@@ -33,12 +33,8 @@ function OrderList() {
   }, [count]);
 
   return (
-    <div className=' p-6 dash-output'>
-      <section>
-        <img src='' alt='' />
-        <h2>{/* some description */}</h2>
-      </section>
-      <section>
+    <div className=' p-7 dash-output'>
+      <section className='mx-5'>
         <div className='flex flex-row justify-between'>
           <h2 className='font-bold text-primary mx-2'>NGN {sold} </h2>
           <h2 className='font-bold text-primary mx-2'>10-20 mins</h2>
@@ -46,7 +42,11 @@ function OrderList() {
           <h2 className='font-bold text-primary mx-2'>10 pcs Avail</h2>
         </div>
       </section>
-      <section className='mt-6 flex flex-row justify-between'>
+      <section className='flex items-center justify-center my-8 flex-col'>
+        <img src={image} alt='' className='order-img my-7' />
+        <h2 className='text-black font-bold text-2xl '>{des}</h2>
+      </section>
+      <section className='mt-12 flex flex-row justify-between'>
         <div className='flex '>
           <button
             onClick={decrementCount}
