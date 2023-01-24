@@ -2,6 +2,7 @@
 import Cart from "./components/Cart";
 import CheckOut from "./components/CheckOut";
 import OrderList from "./components/OrderList";
+import Orders from "./components/Orders";
 import SideMenu from "./components/SideMenu";
 import HomePage from "./Pages/HomePage";
 import Login from "./Pages/Login";
@@ -15,8 +16,7 @@ function App() {
       <SignUp />
       <CheckOut /> */}
       <SideMenu />
-      <Cart />
-
+      <Orders />
       {/* <CheckOut /> */}
     </div>
   );
