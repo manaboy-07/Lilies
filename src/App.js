@@ -9,8 +9,12 @@ import SignUp from "./Pages/SignUp";
 function App() {
   return (
     <div className='App bg-white'>
+      {/* <HomePage />
+      <Login />
+      <SignUp />
+      <CheckOut /> */}
       <SideMenu />
-      
+
       {/* <CheckOut /> */}
     </div>
   );

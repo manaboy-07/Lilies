@@ -51,7 +51,7 @@ function DashContent() {
 
   const [handleArr, setHandleArr] = useState(FoodArr);
   const [description, setDes] = useState("");
-
+  const [showOrder, setShowOrder] = useState(false);
   const [image, setImage] = useState("");
   const showImage = (id) => {
     let arr = handleArr.find((item) => item.id === id);
@@ -60,6 +60,7 @@ function DashContent() {
     let newDes = arr.des;
     setImage(newImg);
     setDes(newDes);
+    setShowOrder(true);
     console.log(newImg);
   };
   const display = handleArr.map((food) => {
@@ -75,6 +76,9 @@ function DashContent() {
       />
     );
   });
+  const hideOrder = () => {
+    setShowOrder(false);
+  };
 
   return (
     <section>
@@ -97,7 +101,12 @@ function DashContent() {
       </div>
 
       <div>
-        <OrderList image={image} des={description} />
+        <OrderList
+          image={image}
+          des={description}
+          showOrder={showOrder}
+          hideOrder={hideOrder}
+        />
       </div>
     </section>
   );

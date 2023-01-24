@@ -1,11 +1,13 @@
 /** @format */
 
 import React, { useEffect, useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
 
-function OrderList({ image, des }) {
+function OrderList({ image, des, showOrder, hideOrder }) {
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(1000);
   const [sold, setSold] = useState(null);
+
   const incrementCount = () => {
     setCount((prevState) => prevState + 1);
 
@@ -27,14 +29,17 @@ function OrderList({ image, des }) {
 
   useEffect(() => {
     let NewPrice = count * price;
-    console.log(price);
-    console.log(count);
+
     setSold(NewPrice);
   }, [count]);
 
   return (
-    <div className=' p-7 dash-output'>
-      <section className='mx-5'>
+    <div className={`p-7 ${showOrder ? "dash-output" : "dash-exit"}`}>
+      <AiOutlineClose
+        className='text-2xl font-extrabold text-primary mb-5 cursor-pointer'
+        onClick={hideOrder}
+      />
+      <section className='my-5'>
         <div className='flex flex-row justify-between'>
           <h2 className='font-bold text-primary mx-2'>NGN {sold} </h2>
           <h2 className='font-bold text-primary mx-2'>10-20 mins</h2>

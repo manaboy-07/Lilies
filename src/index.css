@@ -1,8 +1,26 @@
 /** @format */
 
+/** @format */
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif, "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -52,11 +70,29 @@
 
 .dash-output {
   position: fixed;
+  transition: all 0.6s ease;
   right: 0px;
   width: 38%;
   z-index: 999;
   background-color: rgb(248, 245, 245);
   height: 100vh;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+.dash-exit {
+  position: fixed;
+  transition: all 0.9s ease;
+  right: -100%;
+  width: 38%;
+  z-index: 999;
+  background-color: rgb(248, 245, 245);
+  height: 100vh;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
 }
 .order-img {
   width: 70%;
