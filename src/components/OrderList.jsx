@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
-function OrderList({ image, des, showOrder, hideOrder }) {
+function OrderList({ image, des, showOrder, hideOrder, setShowOrder }) {
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(1000);
   const [sold, setSold] = useState(null);
@@ -34,7 +34,9 @@ function OrderList({ image, des, showOrder, hideOrder }) {
   }, [count]);
 
   return (
-    <div className={`p-7 ${showOrder ? "dash-output" : "dash-exit"}`}>
+    <div
+      onClickCapture={() => setShowOrder(true)}
+      className={`p-7 ${showOrder ? "dash-output" : "dash-exit"}`}>
       <AiOutlineClose
         className='text-2xl font-extrabold text-primary mb-5 cursor-pointer'
         onClick={hideOrder}

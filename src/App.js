@@ -1,4 +1,5 @@
 /** @format */
+import Cart from "./components/Cart";
 import CheckOut from "./components/CheckOut";
 import OrderList from "./components/OrderList";
 import SideMenu from "./components/SideMenu";
@@ -14,6 +15,7 @@ function App() {
       <SignUp />
       <CheckOut /> */}
       <SideMenu />
+      <Cart />
 
       {/* <CheckOut /> */}
     </div>

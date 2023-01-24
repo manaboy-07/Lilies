@@ -81,7 +81,7 @@ function DashContent() {
   };
 
   return (
-    <section>
+    <section onClickCapture={() => setShowOrder(false)}>
       <div className='bg-white dash-content'>
         <div className='p-4'>
           <section className='menu-div'>
@@ -105,6 +105,7 @@ function DashContent() {
           image={image}
           des={description}
           showOrder={showOrder}
+          setShowOrder={setShowOrder}
           hideOrder={hideOrder}
         />
       </div>

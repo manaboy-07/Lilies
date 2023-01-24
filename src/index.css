@@ -81,6 +81,19 @@ code {
   -ms-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
 }
+.cart {
+  position: fixed;
+  transition: all 0.6s ease;
+  right: 0px;
+  width: 50%;
+
+  background-color: rgb(248, 245, 245);
+  height: 100vh;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
 .dash-exit {
   position: fixed;
   transition: all 0.9s ease;
@@ -98,4 +111,9 @@ code {
   width: 70%;
   object-fit: contain;
   height: 60%;
+}
+.cart-flex {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
