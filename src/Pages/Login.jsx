@@ -12,9 +12,13 @@ function Login() {
     setShow((prevState) => !prevState);
   };
   return (
-    <div className='sign flex justify-center items-center bg-neutral py-4'>
+    <div className='sign flex flex-col md:flex-row justify-center items-center bg-neutral py-4'>
       <div>
-        <img src={LoginImg} alt='' className='signImg' />
+        <img
+          src={LoginImg}
+          alt=''
+          className='signImg flex items-center justify-center ml-8 my-3 md:ml-0 md:my-0'
+        />
       </div>
       <div>
         <form action='' className='mr-10' onSubmit={handleSubmit}>

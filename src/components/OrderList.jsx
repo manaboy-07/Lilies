@@ -69,7 +69,7 @@ function OrderList({ image, des, showOrder, hideOrder, setShowOrder }) {
             +
           </button>
         </div>
-        <div className='mx-3 my-2'>
+        <div className='mx-3 mb-2 my-2'>
           <button className='text-white btn rounded-none font-bold cursor-pointer p-3 bg-primary outline-none hover:bg-primary'>
             Add To Cart
           </button>
