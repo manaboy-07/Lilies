@@ -41,7 +41,7 @@ function OrderList({ image, des, showOrder, hideOrder, setShowOrder }) {
         className='text-2xl font-extrabold text-primary mb-5 cursor-pointer'
         onClick={hideOrder}
       />
-      <section className='my-5'>
+      <section className='my-5 p-2'>
         <div className='flex flex-col md:flex-row justify-between items-center'>
           <h2 className='font-bold text-primary mx-2 my-2'>NGN {sold} </h2>
           <h2 className='font-bold text-primary mx-2 my-2'>10-20 mins</h2>
