@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Register from "../Images/Register.png";
+import { Link } from "react-router-dom";
 function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +17,7 @@ function SignUp() {
         <img src={Register} alt='' className='signImg' />
       </div>
       <div>
-        <form action='' className='mr-10' onSubmit={handleSubmit}>
+        <form action='' className='mr-12' onSubmit={handleSubmit}>
           <div className='form-header flex justify-center items-center'>
             <h1 className='text-2xl font-bold text-primary text-center'>
               Welcome to Lilies!
@@ -56,7 +57,9 @@ function SignUp() {
           <div className='flex justify-center items-center'>
             <h3 className='text-primary text-center'>
               Already have an account ?{" "}
-              <span className='text-xl font-bold cursor-pointer '>Login</span>
+              <span className='text-xl font-bold cursor-pointer mx-3 '>
+                <Link to='/Login'>Login</Link>
+              </span>
             </h3>
           </div>
         </form>

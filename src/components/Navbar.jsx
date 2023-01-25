@@ -2,6 +2,7 @@
 
 import React from "react";
 import Logo from "../Images/Logo.svg";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className='navbar '>
@@ -29,17 +30,17 @@ function Navbar() {
               <a>Home</a>
             </li>
             <li>
-              <a>Login</a>
+              <Link to='/Login'>Login</Link>
             </li>
             <li>
-              <a>About</a>
+              <Link to='/Dashboard'>Dashboard</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className='navbar-center'>
         <div className='flex'>
-          <img src={Logo} alt='' />
+          <img src={Logo} alt='' className='ml-2 ' />
           <h2 className='text-3xl text-neutral p-3 ml-4'>Lilies</h2>
         </div>
       </div>
@@ -61,7 +62,7 @@ function Navbar() {
         </button>
 
         <button className='btn bg-secondary outline-none text-primary hover:bg-secondary outline-none border-0 '>
-          Sign Up
+          <Link to='SignUp'>SignUp</Link>
         </button>
       </div>
     </div>

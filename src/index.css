@@ -28,16 +28,16 @@ code {
 }
 .signImg {
   width: 70%;
-  height: 120%;
+  height: 80%;
 }
 .input-container input {
-  width: 150%;
+  width: 100%;
 }
 #input-show {
-  width: 150%;
+  width: 100%;
 }
 .form-btn {
-  width: 150%;
+  width: 100%;
 }
 .btn-menu {
   width: 30px;
@@ -73,6 +73,7 @@ code {
   transition: all 0.6s ease;
   right: 0px;
   width: 38%;
+  overflow-y: scroll;
   z-index: 999;
   background-color: rgb(248, 245, 245);
   height: 100vh;
@@ -94,8 +95,13 @@ code {
   -ms-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
 }
+.des-w {
+  max-width: 250px;
+  text-align: center;
+}
 .dash-exit {
   position: fixed;
+  overflow-y: scroll;
   transition: all 0.9s ease;
   right: -100%;
   width: 38%;

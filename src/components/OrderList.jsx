@@ -42,19 +42,19 @@ function OrderList({ image, des, showOrder, hideOrder, setShowOrder }) {
         onClick={hideOrder}
       />
       <section className='my-5'>
-        <div className='flex flex-row justify-between'>
-          <h2 className='font-bold text-primary mx-2'>NGN {sold} </h2>
-          <h2 className='font-bold text-primary mx-2'>10-20 mins</h2>
+        <div className='flex flex-col md:flex-row justify-between items-center'>
+          <h2 className='font-bold text-primary mx-2 my-2'>NGN {sold} </h2>
+          <h2 className='font-bold text-primary mx-2 my-2'>10-20 mins</h2>
 
-          <h2 className='font-bold text-primary mx-2'>10 pcs Avail</h2>
+          <h2 className='font-bold text-primary mx-2 my-2'>10 pcs Avail</h2>
         </div>
       </section>
       <section className='flex items-center justify-center my-8 flex-col'>
         <img src={image} alt='' className='order-img my-7' />
-        <h2 className='text-black font-bold text-2xl '>{des}</h2>
+        <h2 className='text-black font-bold text-2xl text-center'>{des}</h2>
       </section>
-      <section className='mt-12 flex flex-row justify-between'>
-        <div className='flex '>
+      <section className='mt-12 flex justify-between items-center  flex-col  md:flex-row'>
+        <div className='flex my-2'>
           <button
             onClick={decrementCount}
             className='text-xl font-extrabold p-2 text-primary btn rounded-none bg-secondary hover:bg-secondary'>
@@ -69,7 +69,7 @@ function OrderList({ image, des, showOrder, hideOrder, setShowOrder }) {
             +
           </button>
         </div>
-        <div className='mx-3'>
+        <div className='mx-3 my-2'>
           <button className='text-white btn rounded-none font-bold cursor-pointer p-3 bg-primary outline-none hover:bg-primary'>
             Add To Cart
           </button>

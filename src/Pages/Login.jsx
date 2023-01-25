@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import LoginImg from "../Images/Login.png";
+import { Link } from "react-router-dom";
 function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -48,8 +49,10 @@ function Login() {
             Login
           </button>
           <div className='flex justify-between items-center w-full'>
-            <h3 className='text-primary text-center'>Create an account</h3>
-            <h3 className='text-primary font-bold cursor-pointer m'>
+            <h3 className='text-primary text-center'>
+              <Link to='/SignUp'>Create an account</Link>
+            </h3>
+            <h3 className='text-primary font-bold cursor-pointer mx-3'>
               Forgot Password
             </h3>
           </div>

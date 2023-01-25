@@ -7,17 +7,19 @@ import SideMenu from "./components/SideMenu";
 import HomePage from "./Pages/HomePage";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
+
   return (
     <div className='App bg-white'>
-      {/* <HomePage />
-      <Login />
-      <SignUp />
-      <CheckOut /> */}
-      <SideMenu />
-      <Orders />
-      {/* <CheckOut /> */}
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/SignUp' element={<SignUp />} />
+          <Route path='/Dashboard' element={<SideMenu />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

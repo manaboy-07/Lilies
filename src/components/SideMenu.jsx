@@ -4,20 +4,26 @@ import React from "react";
 import Logo from "../Images/Logo.svg";
 import DashContent from "./DashContent";
 import { AiFillHome } from "react-icons/ai";
+import Orders from "./Orders";
+import Cart from "./Cart";
+import { Link } from "react-router-dom";
+
 import {
   BsPersonCircle,
   BsFillBookmarkFill,
   BsFillCalendarFill,
 } from "react-icons/bs";
+import { useState } from "react";
+
 function SideMenu() {
   return (
-    <div className='flex'>
-      <section className='bg-white flex px-8 py-20 side-bar'>
+    <div className='my-dashboard'>
+      <section className='bg-white flex px-8 py-20 side-bar '>
         <div className='flex flex-col'>
           <div className='logo flex '>
             <img src={Logo} alt='' />
             <h2 className='text-3xl font-bold text-primary mt-3 mx-3'>
-              Lilies
+              <Link to='/'>Lilies</Link>
             </h2>
           </div>
           {/* List items */}
